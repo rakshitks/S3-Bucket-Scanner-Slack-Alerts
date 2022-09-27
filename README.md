@@ -7,6 +7,21 @@ Receive Slack alerts whenever S3 buckets become Public
 ## Description
 Automated script which continously montiors the S3 bucket and creates an Slack alert which contains detailed report of S3 buckets which are made public with respective permission available to everyone.
 
+## Usage
+Make sure that you change channel id (CABCDEF) and Slack authorization token (xoxb-xx) in the script
+1. Normal Usage
+
+``` bash s3automation.sh ```
+
+2. Using crontab 
+
+```crontab -e```
+
+This will run the task everyday at 10:30 AM
+
+```30 10 * * * /root/s3automation.sh```
+
+
 ## Implementation 
 You can refer this article for detailed implementation 
 
